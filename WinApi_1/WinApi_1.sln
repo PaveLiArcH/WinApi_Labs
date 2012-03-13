@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinApi_1_Cpp", "WinApi_1\WinApi_1.vcxproj", "{D451F775-FD30-464F-B882-FE35683FE7AE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinApi_1_WinApi_ReadWrite", "WinApi_1_WinApi_ReadWrite\WinApi_1_WinApi_ReadWrite.vcxproj", "{6BC9EDA9-9942-40A3-8D75-40C1D0EE68F2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinApi_1_WinApi_CopyFile", "WinApi_1_WinApi_CopyFile\WinApi_1_WinApi_CopyFile.vcxproj", "{FDFEB97A-878A-42CD-8DC3-07C5B11397A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D451F775-FD30-464F-B882-FE35683FE7AE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D451F775-FD30-464F-B882-FE35683FE7AE}.Debug|Win32.Build.0 = Debug|Win32
+		{D451F775-FD30-464F-B882-FE35683FE7AE}.Release|Win32.ActiveCfg = Release|Win32
+		{D451F775-FD30-464F-B882-FE35683FE7AE}.Release|Win32.Build.0 = Release|Win32
+		{6BC9EDA9-9942-40A3-8D75-40C1D0EE68F2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6BC9EDA9-9942-40A3-8D75-40C1D0EE68F2}.Debug|Win32.Build.0 = Debug|Win32
+		{6BC9EDA9-9942-40A3-8D75-40C1D0EE68F2}.Release|Win32.ActiveCfg = Release|Win32
+		{6BC9EDA9-9942-40A3-8D75-40C1D0EE68F2}.Release|Win32.Build.0 = Release|Win32
+		{FDFEB97A-878A-42CD-8DC3-07C5B11397A0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FDFEB97A-878A-42CD-8DC3-07C5B11397A0}.Debug|Win32.Build.0 = Debug|Win32
+		{FDFEB97A-878A-42CD-8DC3-07C5B11397A0}.Release|Win32.ActiveCfg = Release|Win32
+		{FDFEB97A-878A-42CD-8DC3-07C5B11397A0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
