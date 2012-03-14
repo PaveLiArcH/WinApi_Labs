@@ -2,30 +2,45 @@
 #include <tchar.h>
 #include <stdarg.h>
 
+#ifdef _UNICODE
+#define UNICODE
+#endif
+
 BOOL PrintStrings(HANDLE hOut, ...)
 {
 	DWORD MsgLen, Count;
-	const wchar_t *pMsg;
+	LPCTSTR pMsg;
 	va_list pMsgList;
 	va_start (pMsgList, hOut);
 	while (pMsg=va_arg(pMsgList, LPCTSTR))
 	{
 		MsgLen = _tcslen(pMsg);
-		if (!WriteConsole(hOut, pMsg, MsgLen, &Count, NULL) && !WriteFile(hOut, pMsg, MsgLen*sizeof(wchar_t), &Count, NULL))
+		#ifndef UNICODE
+		LPTSTR _string=(LPTSTR)malloc(sizeof(TCHAR)*MsgLen+1);
+		CharToOem(pMsg, _string);
+		pMsg=_string;
+		#endif
+		if (!WriteConsole(hOut, pMsg, MsgLen, &Count, NULL) && !WriteFile(hOut, pMsg, MsgLen*sizeof(TCHAR), &Count, NULL))
 		{
+			#ifndef UNICODE
+			free(_string);
+			#endif
 			return FALSE;
 		}
+		#ifndef UNICODE
+		free(_string);
+		#endif
 	}
 	va_end (pMsgList);
 	return TRUE;
 }
 
-BOOL PrintMsg(HANDLE hOut, const wchar_t *pMsg)
+BOOL PrintMsg(HANDLE hOut, LPCTSTR pMsg)
 {
 	return PrintStrings(hOut, pMsg, NULL);
 }
 
-BOOL ConsolePrompt(const wchar_t *pPromptMsg, wchar_t *pResponse, DWORD MaxTchar, BOOL Echo)
+BOOL ConsolePrompt(LPCTSTR pPromptMsg, LPTSTR pResponse, DWORD MaxTchar, BOOL Echo)
 {
 	HANDLE hStdIn, hStdOut;
 	DWORD TcharIn, EchoFlag;

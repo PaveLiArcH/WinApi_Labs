@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C++ Express 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinApi_3", "WinApi_3\WinApi_3.vcxproj", "{EC6D73BB-EB5F-40BA-AA25-F1F918008A71}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinApi_3_Test", "WinApi_3_Test\WinApi_3_Test.vcxproj", "{8FCE1C13-2145-403B-BF87-0A7EAF2117E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{EC6D73BB-EB5F-40BA-AA25-F1F918008A71}.Debug|Win32.Build.0 = Debug|Win32
 		{EC6D73BB-EB5F-40BA-AA25-F1F918008A71}.Release|Win32.ActiveCfg = Release|Win32
 		{EC6D73BB-EB5F-40BA-AA25-F1F918008A71}.Release|Win32.Build.0 = Release|Win32
+		{8FCE1C13-2145-403B-BF87-0A7EAF2117E1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8FCE1C13-2145-403B-BF87-0A7EAF2117E1}.Debug|Win32.Build.0 = Debug|Win32
+		{8FCE1C13-2145-403B-BF87-0A7EAF2117E1}.Release|Win32.ActiveCfg = Release|Win32
+		{8FCE1C13-2145-403B-BF87-0A7EAF2117E1}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

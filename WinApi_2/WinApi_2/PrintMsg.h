@@ -3,6 +3,6 @@
 
 BOOL PrintStrings(HANDLE hOut, ...);
 
-BOOL PrintMsg(HANDLE hOut, const wchar_t *pMsg);
+BOOL PrintMsg(HANDLE hOut, LPCTSTR pMsg);
 
-BOOL ConsolePrompt(const wchar_t *pPromptMsg, wchar_t *pResponse, DWORD MaxTchar, BOOL Echo);
+BOOL ConsolePrompt(LPCTSTR pPromptMsg, LPTSTR pResponse, DWORD MaxTchar, BOOL Echo);
