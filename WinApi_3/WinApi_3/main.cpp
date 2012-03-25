@@ -13,7 +13,7 @@
 //#define _PART_4
 //#define _PART_5
 //#define _PART_6
-#define _PART_7
+//#define _PART_7
 
 #ifndef _REPORT_ERROR
 #include <io.h>
