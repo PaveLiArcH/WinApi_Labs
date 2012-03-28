@@ -11,10 +11,10 @@
 VOID CatFile(HANDLE hInFfile, HANDLE hOutFile)
 {
 	DWORD _nIn,_nOut;
-	TCHAR _buf[BUF_SIZE];
+	char _buf[BUF_SIZE];
 	while (ReadFile(hInFfile, _buf, BUF_SIZE, &_nIn, NULL) && _nIn)
 	{
-		if (!WriteConsole(hOutFile, _buf, _nIn, &_nOut, NULL) && !WriteFile(hOutFile, _buf, _nIn, &_nOut, NULL))
+		if (!WriteConsoleA(hOutFile, _buf, _nIn, &_nOut, NULL) && !WriteFile(hOutFile, _buf, _nIn, &_nOut, NULL))
 		{
 			_tprintf(_T("Error while writing to output. Error: %x\n"), GetLastError());
 			exit(3);
@@ -36,9 +36,9 @@ int _tmain(int argC, LPCTSTR argV[])
 
 	if (_firstName<argC)
 	{
-		for (int i=0; i<_firstName; i++)
+		for (int i=_firstName; i<argC; i++)
 		{
-			HANDLE _hIn=CreateFile(argV[_firstName+i], GENERIC_READ, 0, NULL, OPEN_EXISTING, 0, NULL);
+			HANDLE _hIn=CreateFile(argV[i], GENERIC_READ, 0, NULL, OPEN_EXISTING, 0, NULL);
 			if (_hIn==INVALID_HANDLE_VALUE)
 			{
 				if (_skip)
@@ -53,6 +53,13 @@ int _tmain(int argC, LPCTSTR argV[])
 		}
 	} else
 	{
-
+		HANDLE _hIn=GetStdHandle(STD_INPUT_HANDLE);
+		if (_hIn==INVALID_HANDLE_VALUE)
+		{
+			_tprintf(_T("Unable to open input. Error: %x\n"), GetLastError());
+			return 3;
+		}
+		CatFile(_hIn, _hStdOut);
+		CloseHandle(_hIn);
 	}
 }
