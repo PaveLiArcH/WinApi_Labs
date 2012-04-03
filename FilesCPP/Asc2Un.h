@@ -4,4 +4,4 @@
 #include <tchar.h>
 #include <stdarg.h>
 
-DWORD Options(int argc, LPCTSTR argv[], LPCTSTR OptStr, ...);
+BOOL Asc2Un (LPCTSTR fIn, LPCTSTR fOut, BOOL bFailIfExists);

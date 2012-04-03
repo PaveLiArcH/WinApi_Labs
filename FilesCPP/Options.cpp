@@ -1,4 +1,5 @@
 #include "Options.h"
+#include "EvryThng.h"
 
 DWORD Options (int argc, LPCTSTR argv[], LPCTSTR OptStr, ...)
 {
