@@ -1,7 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C++ Express 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinApi_5", "WinApi_5\WinApi_5.vcxproj", "{9739EEBD-887A-422A-96BC-C3B6EE5B081B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinApi_5_ind_1", "WinApi_5_ind_1\WinApi_5_ind_1.vcxproj", "{AE49561B-0A57-46BA-96B1-1ED715776DA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +15,10 @@ Global
 		{9739EEBD-887A-422A-96BC-C3B6EE5B081B}.Debug|Win32.Build.0 = Debug|Win32
 		{9739EEBD-887A-422A-96BC-C3B6EE5B081B}.Release|Win32.ActiveCfg = Release|Win32
 		{9739EEBD-887A-422A-96BC-C3B6EE5B081B}.Release|Win32.Build.0 = Release|Win32
+		{AE49561B-0A57-46BA-96B1-1ED715776DA6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AE49561B-0A57-46BA-96B1-1ED715776DA6}.Debug|Win32.Build.0 = Debug|Win32
+		{AE49561B-0A57-46BA-96B1-1ED715776DA6}.Release|Win32.ActiveCfg = Release|Win32
+		{AE49561B-0A57-46BA-96B1-1ED715776DA6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
