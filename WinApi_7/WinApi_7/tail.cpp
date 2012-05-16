@@ -33,6 +33,7 @@ void fastMethod(HANDLE hFile)
 		CyclicBuf<LONGLONG> _cyclicBuf(11);
 		LARGE_INTEGER _currPos=_startPos;
 		_startPos.QuadPart=0;
+		_cyclicBuf.cm_Add(_startPos.QuadPart);
 		while (ReadFile(hFile, Buf, bufSize, &nIn, NULL) && nIn)
 		{
 			for(DWORD i=0; i<nIn; i++)
@@ -46,7 +47,7 @@ void fastMethod(HANDLE hFile)
 			
 			if (!SetFilePointerEx(hFile, _startPos, &_currPos, FILE_CURRENT))
 			{
-				//ReportError(_T("Ошибка при получении позиции файла: "), 3, TRUE);
+				ReportError(_T("Ошибка при получении позиции файла: "), 3, TRUE);
 			}
 		}
 		unsigned int _fill=_cyclicBuf.cm_GetFill();
@@ -63,11 +64,11 @@ void fastMethod(HANDLE hFile)
 			}
 		} else
 		{
-			//ReportError(_T("Вероятно файл не содержит знаков перевода строки"), 4, FALSE);
+			ReportError(_T("Вероятно файл не содержит знаков перевода строки"), 4, FALSE);
 		}
 	} else
 	{
-		//ReportError(_T("Ошибка при получении размера файла: "), 2, TRUE);
+		ReportError(_T("Ошибка при получении размера файла: "), 2, TRUE);
 	}
 }
 
@@ -87,7 +88,7 @@ int _tmain(int argC, LPCTSTR *argV)
 			fastMethod(hFile);
 		} else
 		{
-			//ReportError(_T("Не удалось открыть файл: "), 1, TRUE);
+			ReportError(_T("Не удалось открыть файл: "), 1, TRUE);
 		}
 	}
 }

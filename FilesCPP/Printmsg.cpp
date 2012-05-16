@@ -28,7 +28,7 @@ BOOL PrintStrings (HANDLE hOut, ...)
 BOOL PrintMsg (HANDLE hOut, LPCTSTR pMsg)
 /* Веpси PrintStrings для одного сообщения.  */
 {
-  TCHAR Buf[MAX_PATH+1];
+  char Buf[MAX_PATH+1];
   CharToOem(pMsg, Buf);
   return PrintStrings (hOut, Buf, NULL);
 }
