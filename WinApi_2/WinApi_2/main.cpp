@@ -2,7 +2,7 @@
 #include <tchar.h>
 #include <stdio.h>
 #include <stdarg.h>
-#include "PrintMsg.h"
+#include "..\..\FilesCPP\EvryThng.h"
 
 const int c_MaxChar=5;
 const int c_PasswMaxChar=10;

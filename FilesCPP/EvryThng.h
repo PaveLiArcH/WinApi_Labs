@@ -42,7 +42,7 @@
 
   // from Envirnmt.h
 //#define UNICODE  // Set by Self
-#undef UNICODE  
+//#undef UNICODE  
 
 #ifdef UNICODE
   #define _UNICODE
