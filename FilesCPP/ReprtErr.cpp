@@ -3,8 +3,7 @@
 #include "EvryThng.h"
 // #include <stdlib.h>
 
-VOID ReportError (LPCTSTR UserMessage, DWORD ExitCode,
-                  BOOL PrintErrorMsg)
+VOID ReportError (LPCTSTR UserMessage, DWORD ExitCode, BOOL PrintErrorMsg)
 {
   DWORD eMsgLen, LastErr = GetLastError ();
   LPTSTR lpvSysMsg;

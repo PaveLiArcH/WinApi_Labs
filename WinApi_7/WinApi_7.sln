@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinApi_7", "WinApi_7\WinApi_7.vcxproj", "{43BC5AC6-866C-4C3D-9E84-94CA9648E630}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43BC5AC6-866C-4C3D-9E84-94CA9648E630}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43BC5AC6-866C-4C3D-9E84-94CA9648E630}.Debug|Win32.Build.0 = Debug|Win32
+		{43BC5AC6-866C-4C3D-9E84-94CA9648E630}.Release|Win32.ActiveCfg = Release|Win32
+		{43BC5AC6-866C-4C3D-9E84-94CA9648E630}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
