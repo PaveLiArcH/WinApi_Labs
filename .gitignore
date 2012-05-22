@@ -1,6 +1,12 @@
 Debug
 Release
+*.7z
+*.zip
+*.rar
+*.txt
+*.utxt
 *.sdf
+*.opensdf
 *.suo
 *.user
 *.ipch

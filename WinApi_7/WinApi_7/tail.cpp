@@ -74,7 +74,7 @@ void fastMethod(HANDLE hFile)
 
 void stableMethod(HANDLE hFile);
 
-int _tmain(int argC, LPCTSTR *argV)
+int _tmain(int argC, LPCTSTR argV[])
 {
 	setlocale(LC_ALL, "");
 	if (argC!=2)

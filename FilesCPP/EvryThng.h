@@ -44,10 +44,14 @@
 //#define UNICODE  // Set by Self
 //#undef UNICODE  
 
-#ifdef UNICODE
-  #define _UNICODE
-#else
-  #undef _UNICODE
+//#ifdef UNICODE
+//  #define _UNICODE
+//#else
+//  #undef _UNICODE
+//#endif
+
+#ifndef MAX_PATH_LONG
+  #define MAX_PATH_LONG 32767
 #endif
 
 #include <windows.h>
@@ -72,7 +76,7 @@ BOOL ConsolePrompt (LPCTSTR pPromptMsg, LPTSTR pResponse,
      DWORD MaxTchar, BOOL Echo);
 VOID ReportError (LPCTSTR UserMessage, DWORD ExitCode,
                   BOOL PrintErrorMsg);
-DWORD Options (int argc, LPTSTR argv[], 
+DWORD Options (int argc, LPCTSTR argv[], 
 			             LPCTSTR OptStr, ...);
 BOOL Asc2Un (LPCTSTR fIn, LPCTSTR fOut, BOOL bFailIfExists);
 VOID ReportException (LPCTSTR UserMessage, DWORD ExcetionCode);
