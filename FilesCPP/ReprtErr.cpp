@@ -7,7 +7,6 @@ VOID ReportError (LPCTSTR UserMessage, DWORD ExitCode, BOOL PrintErrorMsg)
 {
   DWORD eMsgLen, LastErr = GetLastError ();
   LPTSTR lpvSysMsg;
-  TCHAR Buf[MAX_PATH];
 //  LPTSTR WBuf; 
 
   HANDLE hStdErr = GetStdHandle (STD_ERROR_HANDLE);
@@ -20,7 +19,13 @@ VOID ReportError (LPCTSTR UserMessage, DWORD ExitCode, BOOL PrintErrorMsg)
 //        MAKELANGID (LANG_RUSSIAN, SUBLANG_NEUTRAL),
         (LPTSTR) &lpvSysMsg, 0, NULL);
      //CharToOem(lpvSysMsg, lpvSysMsg);
-     CharToOem(lpvSysMsg, (char *)&Buf[0]);
+#ifdef UNICODE
+	 LPCTSTR Buf;
+	 Buf=lpvSysMsg;
+#else
+     TCHAR Buf[MAX_PATH];
+	 CharToOem(lpvSysMsg, (char *)&Buf[0]);
+#endif
 //     WBuf = (LPTSTR)malloc(256);
 //	   CharToOem(lpvSysMsg, WBuf);
 //     PrintMsg (hStdErr, WBuf);

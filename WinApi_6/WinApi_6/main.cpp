@@ -1,7 +1,7 @@
 #include <Windows.h>
 #include <tchar.h>
 
-#include "..\..\WinApi_3\WinApi_3\ReportError.h"
+#include "..\..\FilesCPP\EvryThng.h"
 
 typedef void (*fileDirFunc)(int argC, LPCTSTR *argV);
 

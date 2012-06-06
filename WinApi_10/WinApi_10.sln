@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinApi_10", "WinApi_10\WinApi_10.vcxproj", "{074E1B88-37C9-40F6-A707-CF264B625053}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "regEdit", "regEdit\regEdit.vcxproj", "{CB4AB8DC-B77C-4CEB-95B8-E432C7CD208A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{074E1B88-37C9-40F6-A707-CF264B625053}.Debug|Win32.ActiveCfg = Debug|Win32
+		{074E1B88-37C9-40F6-A707-CF264B625053}.Debug|Win32.Build.0 = Debug|Win32
+		{074E1B88-37C9-40F6-A707-CF264B625053}.Release|Win32.ActiveCfg = Release|Win32
+		{074E1B88-37C9-40F6-A707-CF264B625053}.Release|Win32.Build.0 = Release|Win32
+		{CB4AB8DC-B77C-4CEB-95B8-E432C7CD208A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB4AB8DC-B77C-4CEB-95B8-E432C7CD208A}.Debug|Win32.Build.0 = Debug|Win32
+		{CB4AB8DC-B77C-4CEB-95B8-E432C7CD208A}.Release|Win32.ActiveCfg = Release|Win32
+		{CB4AB8DC-B77C-4CEB-95B8-E432C7CD208A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

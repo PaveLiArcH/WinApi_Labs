@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1421B3D4-3070-45E8-8048-63D7C69C39AB}</ProjectGuid>
+    <ProjectGuid>{CB4AB8DC-B77C-4CEB-95B8-E432C7CD208A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>WinApi_6</RootNamespace>
+    <RootNamespace>regEdit</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -39,7 +39,6 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>TestFileDir</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -75,12 +74,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\FilesCPP\Options.cpp" />
     <ClCompile Include="..\..\FilesCPP\Printmsg.cpp" />
     <ClCompile Include="..\..\FilesCPP\ReprtErr.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="regEdit.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\WinApi_3\WinApi_3\ReportError.h" />
+    <ClInclude Include="..\..\FilesCPP\EvryThng.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

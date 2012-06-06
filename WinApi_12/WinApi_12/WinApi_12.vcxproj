@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1421B3D4-3070-45E8-8048-63D7C69C39AB}</ProjectGuid>
+    <ProjectGuid>{7D90DB44-4C8F-4526-8019-5BD0C372C733}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>WinApi_6</RootNamespace>
+    <RootNamespace>WinApi_12</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -39,7 +39,6 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>TestFileDir</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -51,6 +50,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>UNICODE;_UNICODE</UndefinePreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -76,11 +76,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\FilesCPP\Printmsg.cpp" />
+    <ClCompile Include="..\..\FilesCPP\ReportException.cpp" />
     <ClCompile Include="..\..\FilesCPP\ReprtErr.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Exception.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\WinApi_3\WinApi_3\ReportError.h" />
+    <ClInclude Include="..\..\FilesCPP\EvryThng.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

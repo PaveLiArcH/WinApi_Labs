@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="toupper.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FilesCPP\ReportException.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
     <ClCompile Include="..\..\FilesCPP\Printmsg.cpp">
@@ -26,7 +29,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\WinApi_3\WinApi_3\ReportError.h">
+    <ClInclude Include="..\..\FilesCPP\EvryThng.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>
